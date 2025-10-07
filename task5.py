@@ -6,11 +6,11 @@ age = int(input("Enter age : "))
 
 print("------------------------------------------------------------")
 
-# Product details
+
 product = input("Enter product name : ")
 grams = float(input("Enter product grams : "))
 
-# Current prices
+
 gold_price = 12000                   
 making_charge_per_gram = 845        
 
@@ -18,7 +18,7 @@ print("------------------------------------------------------------")
 print(f"Current Gold Price (1 gram) : ₹{gold_price}")
 print(f"Making Charges (1 gram)     : ₹{making_charge_per_gram}")
 
-# Calculations
+
 total_gold_rate = grams * gold_price
 total_making_charge = grams * making_charge_per_gram
 total_amount = total_gold_rate + total_making_charge
@@ -87,5 +87,6 @@ print(f"Discount Amount   : ₹{discount_amount:.2f}")
 print("------------------------------------------------------------")
 print(f"NET AMOUNT TO PAY : ₹{net_amount:.2f}")
 print("------------------------------------------------------------")
+
 
 
