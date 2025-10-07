@@ -11,8 +11,8 @@ product = input("Enter product name : ")
 grams = float(input("Enter product grams : "))
 
 # Current prices
-gold_price = 12000                   # (1 gram gold price)
-making_charge_per_gram = 845         # (1 gram making charge)
+gold_price = 12000                   
+making_charge_per_gram = 845        
 
 print("------------------------------------------------------------")
 print(f"Current Gold Price (1 gram) : ₹{gold_price}")
@@ -29,10 +29,10 @@ print(f"Total Making Charges : {grams} x {making_charge_per_gram} = ₹{total_ma
 print(f"Total Amount         : ₹{total_gold_rate} + ₹{total_making_charge} = ₹{total_amount}")
 print("------------------------------------------------------------")
 
-# Applying discount based on gender and age
+
 discount = 0
 
-if gender == "M" or gender == "m":          # For Male
+if gender == "M" or gender == "m":       
     if age > 65:
         if 21000 < total_amount <= 31000:
             discount = 20
@@ -48,7 +48,7 @@ if gender == "M" or gender == "m":          # For Male
         elif total_amount > 51000:
             discount = 25
 
-elif gender == "F" or gender == "f":        # For Female
+elif gender == "F" or gender == "f":        
     if age > 65:
         if 21000 < total_amount <= 31000:
             discount = 25
@@ -64,11 +64,11 @@ elif gender == "F" or gender == "f":        # For Female
         elif total_amount > 51000:
             discount = 30
 
-# Calculating discount and final amount
+
 discount_amount = (total_gold_rate * discount) / 100
 net_amount = total_amount - discount_amount
 
-# Displaying final bill
+
 print("------------------------------------------------------------")
 print("                     FINAL BILL")
 print("------------------------------------------------------------")
@@ -87,4 +87,5 @@ print(f"Discount Amount   : ₹{discount_amount:.2f}")
 print("------------------------------------------------------------")
 print(f"NET AMOUNT TO PAY : ₹{net_amount:.2f}")
 print("------------------------------------------------------------")
+
 
